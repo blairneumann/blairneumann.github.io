@@ -1,0 +1,22 @@
+<!-- _includes/head.html -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+<title>
+  {% if page.title %}
+    {{ page.title }} &bull; {{ site.title }}
+  {% else %}
+    {{ site.title }}
+  {% endif %}
+</title>
+
+<!-- Stylesheets -->
+<link href="{{ site.baseurl }}/css/bootstrap.min.css" rel="stylesheet">
+
+<!-- Favicons -->
+<link rel="apple-touch-icon" href="{{ site.baseurl }}/apple-touch-icon.png">
+<link rel="icon" href="{{ site.baseurl }}/favicon.ico">
+
+{% include googleanalytics.html %}
+
+<!-- / _includes/head.html -->
