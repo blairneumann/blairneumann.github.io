@@ -1,0 +1,22 @@
+{
+  "name": "blairneumann.github.io",
+  "version": "1.0.0",
+  "description": "Blair Neumann's personal developer site",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/blairneumann/blairneumann.github.io.git"
+  },
+  "author": "Blair Neumann",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/blairneumann/blairneumann.github.io/issues"
+  },
+  "homepage": "https://github.com/blairneumann/blairneumann.github.io#readme",
+  "devDependencies": {
+    "bootstrap": "^4.0.0-alpha.6"
+  }
+}
