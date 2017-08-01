@@ -1,0 +1,14 @@
+<h2><a href="{{ page.url }}">{{ page.title }}</a></h2>
+<p class="mb-1">{{ page.date | date: '%B %d, %Y' }}</p>
+
+{% for tag in page.categories %}
+  <span class="badge badge-default">{{ tag }}</span>
+{% endfor %}
+
+<div class="mt-3 mb-4">
+  {% if page.content %}
+    {{ page.content }}
+  {% else %}
+    {{ content }}
+  {% endif %}
+</div>

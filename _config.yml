@@ -14,11 +14,12 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 title: Blair Neumann's developer blog
-email: blair@blairneumann.com
+email: blairn@outlook.com
+telephone: +14254668358
 description: > 
-  This is Blair Neumann's personal developer site. Blair is a full-stack web and
-  cross-platform mobile JavaScript and C# developer located in Seattle, WA, USA.
-baseurl: "" # the subpath of your site, e.g. /blog
+  Blair is a full-stack web and cross-platform mobile Technical Program Manager
+  and JavaScript/C# developer located in Seattle, WA, USA.
+baseurl: "." # the subpath of your site, e.g. /blog
 url: "https://blairneumann.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 github_username:  blairneumann
 
@@ -31,11 +32,10 @@ plugins:
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
 # to override the default setting.
-# exclude:
-#   - Gemfile
-#   - Gemfile.lock
-#   - node_modules
-#   - vendor/bundle/
-#   - vendor/cache/
-#   - vendor/gems/
-#   - vendor/ruby/
+exclude:
+  - .gitignore
+  - .sass-cache
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - package.json
