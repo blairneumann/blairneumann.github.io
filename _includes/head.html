@@ -2,11 +2,11 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
 <title>
-  {% if page.title %}
+  {%- if page.title -%}
     {{ page.title }} &bull; {{ site.title }}
-  {% else %}
+  {%- else -%}
     {{ site.title }}
-  {% endif %}
+  {%- endif -%}
 </title>
 
 <link rel="stylesheet" href="{{ site.baseurl }}/css/bootstrap.min.css">

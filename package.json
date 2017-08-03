@@ -17,6 +17,7 @@
     "dist-js-bootstrap": "copyfiles -f node_modules/bootstrap/dist/js/bootstrap.min.js js/",
     "dist-fonts": "npm-run-all --parallel dist-fonts-font-awesome",
     "dist-fonts-font-awesome": "copyfiles -f node_modules/font-awesome/fonts/* fonts/",
+    "build": "bundle exec jekyll build",
     "deploy": "git push origin master"
   },
   "repository": {

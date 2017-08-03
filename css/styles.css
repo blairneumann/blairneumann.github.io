@@ -2,17 +2,6 @@
   width: 100%;
 }
 
-#sidebar-skills * li {
-  list-style: none;
-  list-style-type: none;
-  position: relative;
-  left: -20px;
-}
-
-#nav-footer * li {
-  display: inline;
-}
-
-#nav-footer * button {
+#nav-footer > a {
   width: 96px
 }

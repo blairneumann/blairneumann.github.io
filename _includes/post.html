@@ -1,0 +1,10 @@
+<h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
+<p class="mb-1">{{ post.date | date: '%B %d, %Y' }}</p>
+
+{%- for tag in post.categories -%}
+  <span class="badge badge-default mx-1">{{ tag }}</span>
+{%- endfor -%}
+
+<div class="mt-3 mb-4">
+  {{ post.content }}
+</div>

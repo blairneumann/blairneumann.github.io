@@ -19,15 +19,19 @@ telephone: +14254668358
 description: > 
   Blair is a full-stack web and cross-platform mobile Technical Program Manager
   and JavaScript/C# developer located in Seattle, WA, USA.
-baseurl: "." # the subpath of your site, e.g. /blog
-url: "https://blairneumann.github.io" # the base hostname & protocol for your site, e.g. http://example.com
-github_username:  blairneumann
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "https://www.blairneumann.com" # the base hostname & protocol for your site, e.g. http://example.com
+github-username:  blairneumann
+publisher: Blair Neumann
 
 # Build settings
 markdown: kramdown
 theme: minima
 plugins:
   - jekyll-feed
+  - jekyll-paginate
+paginate: 2
+paginate_path: "/blog/page:num/"
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list

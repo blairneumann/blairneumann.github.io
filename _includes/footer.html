@@ -2,9 +2,8 @@
   <div class="container">
     <div class="row justify-content-center mt-3" id="nav-footer">
       <div class="col-auto">
-        <div class="btn-group btn-group-sm" role="group">
-          <button type="button" class="btn btn-secondary"><span class="fa fa-home"></span> Home</button>
-          <button type="button" class="btn btn-secondary"><span class="fa fa-newspaper-o"></span> Blog</button>
+        <div id="nav-footer">
+          <a href="/" class="btn btn-secondary btn-sm" role="button"><span class="fa fa-home"></span> Home</a>
         </div>
       </div>
     </div>
@@ -22,7 +21,21 @@
     </div>
     <div class="row justify-content-center mt-3">
       <div class="col-auto">
-        <p><span class="fa fa-copyright"></span> 2017 Blair Neumann</p>
+        <p>
+          <span class="fa fa-copyright"></span>
+          <span id="copyright-year">
+            {%- assign firstPost = site.posts | last -%}
+            {%- assign lastPost = site.posts | first -%}
+            {%- assign firstPostYear = firstPost.date | date: "%Y" -%}
+            {%- assign lastPostYear = lastPost.date | date: "%Y" -%}
+            {%- if firstPostYear == lastPostYear -%}
+              {{ firstPostYear }}
+            {%- else -%}
+              {{ firstPostYear }} &ndash; {{ lastPostYear }}
+            {%- endif -%}
+          </span>
+          <span>{{ site.publisher }}</span>
+        </p>
       </div>
     </div>
   </div>
