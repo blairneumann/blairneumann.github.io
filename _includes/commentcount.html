@@ -1,0 +1,7 @@
+  {% if post.comment_id %}
+    <a href="{{ post.url }}#disqus_thread" class="btn btn-sm btn-outline-primary">
+      <span class="disqus-comment-count"
+        data-disqus-identifier="{{ post.comment_id }}"
+        data-disqus-url="{{ site.canonical_url }}{{ post.url }}"></span>
+    </a>
+  {% endif %}

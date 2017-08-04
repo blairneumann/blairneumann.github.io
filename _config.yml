@@ -21,17 +21,49 @@ description: >
   and JavaScript/C# developer located in Seattle, WA, USA.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://www.blairneumann.com" # the base hostname & protocol for your site, e.g. http://example.com
+canonical_url: "https://www.blairneumann.com"
 github-username:  blairneumann
 publisher: Blair Neumann
+
+excerpt_separator: "<!-- more -->"
 
 # Build settings
 markdown: kramdown
 theme: minima
+highlighter: rouge
 plugins:
   - jekyll-feed
   - jekyll-paginate
+
+# Plugin: jekyll-paginate
 paginate: 2
-paginate_path: "/blog/page:num/"
+paginate_path: "/blog/page-:num/"
+
+# Plugin: jekyll-tagging
+tag_page_layout: tag
+tag_page_dir: tag
+tag_feed_layout: tag
+tag_feed_dir: tag
+tag_page_data:
+  sitemap: false
+tag_feed_data:
+  sitemap: false
+
+defaults:
+  -
+    scope:
+      path: ""
+      type: "posts"
+    values: 
+      layout: "post"
+      is_post: true
+  -
+    scope:
+      path: ""
+      type: "pages"
+    values: 
+      layout: "page"
+      is_page: true
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list

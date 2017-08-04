@@ -1,0 +1,15 @@
+---
+layout: default
+---
+<div class="row row-content pb-2">
+  <div class="col">
+    <h5 class="text-muted">Tag: {{ page.tag }}</h5>
+  </div>
+</div>
+<div class="row row-content">
+  <div class="col">
+{% for post in page.posts -%}
+  {%- include post.html -%}
+{%- endfor %}
+  </div>
+</div>
