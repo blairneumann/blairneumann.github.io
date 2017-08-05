@@ -1,11 +1,23 @@
----
-layout: default
----
-<div class="row">
-  <div class="col-12">
-    <h1>404</h1>
-
-    <p><strong>Page not found :(</strong></p>
-    <p>I'm sorry, we tried. Maybe try <a href="/" style="text-decoration: underline">here</a> instead?</p>
-  </div>
-</div>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+{% include head.html %}
+  </head>
+  <body>
+{% include header.html %}
+    <div class="container">
+      <div class="row row-content text-center my-5">
+        <div class="col">
+          <h1 class="display-1"><strong>404</strong></h1>
+          <p class="display-4">Page not found :(</p>
+          <p class="lead text-muted">I'm sorry, we tried. Maybe try <a href="/"><span class="fa fa-home"></span> here</a> instead?</p>
+        </div>
+      <div class="row row-content mt-5 fixed-bottom">
+        <div class="col">
+{% include footer.html %}
+        </div>
+      </div>
+    </div>
+{% include scripts.html %}
+  </body>
+</html>

@@ -13,15 +13,14 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: Blair Neumann's developer blog
+title: Blair Neumann's personal blog
 email: blairn@outlook.com
 telephone: +14254668358
 description: > 
   Blair is a full-stack web and cross-platform mobile Technical Program Manager
   and JavaScript/C# developer located in Seattle, WA, USA.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://www.blairneumann.com" # the base hostname & protocol for your site, e.g. http://example.com
-canonical_url: "https://www.blairneumann.com"
+url: "http://www.blairneumann.com" # the base hostname & protocol for your site, e.g. http://example.com
 github-username:  blairneumann
 publisher: Blair Neumann
 
@@ -48,6 +47,9 @@ tag_page_data:
   sitemap: false
 tag_feed_data:
   sitemap: false
+
+# Disqus
+disqus_sitename: blairneumann
 
 defaults:
   -

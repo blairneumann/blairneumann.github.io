@@ -4,19 +4,19 @@ layout: nil
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
  <title>Your Title - {{ page.tag }}</title>
- <link href="{{ site.canonical_url }}{{ page.url }}" rel="self"/>
- <link href="{{ site.canonical_url }}/tag/{{ page.tag }}.html"/>
+ <link href="{{ site.url }}{{ page.url }}" rel="self"/>
+ <link href="{{ site.url }}/tag/{{ page.tag }}.html"/>
  <updated>{{ site.time | date_to_xmlschema }}</updated>
- <id>{{ site.canonical_url }}/tag/{{ page.tag }}.html</id>
+ <id>{{ site.url }}/tag/{{ page.tag }}.html</id>
  <author>
    <name>{{ site.publisher }}</name>
  </author>
  {% for post in page.posts %}
  <entry>
    <title>{{ post.title }}</title>
-   <link href="{{ site.canonical_url }}{{ post.url }}"/>
+   <link href="{{ site.url }}{{ post.url }}"/>
    <updated>{{ post.date | date_to_xmlschema }}</updated>
-   <id>{{ site.canonical_url }}{{ post.id }}</id>
+   <id>{{ site.url }}{{ post.id }}</id>
    <content type="html">{{ post.content | xml_escape }}</content>
  </entry>
  {% endfor %}

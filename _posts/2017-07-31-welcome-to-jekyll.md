@@ -1,15 +1,17 @@
 ---
 title:  "Welcome to Jekyll!"
-date:   2017-07-31 11:32:02 -0700
-tags: jekyll update baz
+date:   2017-07-31 12:00:00 -0700
+categories: jekyll update
+comment_id: "WelcomeJekyll170731"
 ---
-You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run `jekyll serve`, which launches a web server and auto-regenerates your site when a file is updated.
 
-<!-- more -->
+You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run `jekyll serve`, which launches a web server and auto-regenerates your site when a file is updated.
 
 To add new posts, simply add a file in the `_posts` directory that follows the convention `YYYY-MM-DD-name-of-post.ext` and includes the necessary front matter. Take a look at the source for this post to get an idea about how it works.
 
 Jekyll also offers powerful support for code snippets:
+
+<!-- more -->
 
 {% highlight ruby %}
 def print_hi(name)

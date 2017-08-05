@@ -8,7 +8,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "dist": "npm-run-all --parallel dist-css dist-js dist-fonts",
     "dist-css": "npm-run-all --parallel dist-css-bootstrap dist-css-bootstrap-social dist-css-font-awesome",
-    "dist-css-bootstrap": "copyfiles -f node_modules/bootstrap/dist/css/bootstrap.min.css css/",
+    "dist-css-bootstrap": "copyfiles -f node_modules/bootstrap/dist/css/bootstrap.min.css css/ && copyfiles -f node_modules/bootstrap/dist/css/bootstrap.min.css.map css/",
     "dist-css-bootstrap-social": "copyfiles -f node_modules/bootstrap-social/bootstrap-social.css css/",
     "dist-css-font-awesome": "copyfiles -f node_modules/font-awesome/css/font-awesome.min.css css/",
     "dist-js": "npm-run-all --parallel dist-js-jquery dist-js-tether dist-js-bootstrap",
