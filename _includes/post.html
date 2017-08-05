@@ -5,6 +5,6 @@
   {{ post.excerpt }}
   {% if post.content != post.excerpt -%}
     <a class="btn btn-sm btn-outline-primary mr-1" role="button" href="{{ post.url }}" title="Click to read this post: &quot;{{ post.title }}&quot;">Read More <span class="fa fa-arrow-circle-right"></span></a>
-  {%- endif %}
+  {%- endif -%}
   {%- include commentcount.html -%}
 </div>
