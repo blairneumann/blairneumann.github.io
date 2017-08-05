@@ -1,7 +1,7 @@
 ---
 title:  "Goodbye to Hyde!"
 date:   2016-07-31 12:00:00 -0700
-categories: jekyll update hyde
+tags: jekyll update hyde
 comment_id: "GoodbyeHyde160731"
 ---
 

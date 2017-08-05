@@ -1,7 +1,7 @@
 ---
 title:  "Welcome to Jekyll!"
 date:   2017-07-31 12:00:00 -0700
-categories: jekyll update
+tags: jekyll update
 comment_id: "WelcomeJekyll170731"
 ---
 
