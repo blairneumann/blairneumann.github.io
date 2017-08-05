@@ -33,7 +33,7 @@ highlighter: rouge
 plugins:
   - jekyll-feed
   - jekyll-paginate
-  - jekyll-tagging
+#  - jekyll-tagging
 
 # Plugin: jekyll-paginate
 paginate: 2
@@ -50,7 +50,7 @@ tag_feed_data:
   sitemap: false
 
 # Disqus
-disqus_sitename: blairneumann
+disqus_sitename: blairneumann-staging
 
 defaults:
   -
