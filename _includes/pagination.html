@@ -1,37 +1,37 @@
-{% if paginator.total_pages > 1 -%}
+{% if paginator.total_pages > 1 %}
 <div class="row pb-3">
   <div class="col">
     <div class="text-center">
       <span class="px-3">
-      {%- if paginator.previous_page %}
+      {% if paginator.previous_page %}
         <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}"><span class="fa fa-chevron-left pr-1"></span> Prev</a>
-      {%- else %}
+      {% else %}
         <span class="text-muted"><span class="fa fa-chevron-left"></span> Prev</span>
-      {%- endif %}
+      {% endif %}
       </span>
 
-    {%- for page in (1..paginator.total_pages) %}
-      {%- if page == paginator.page %}
+    {% for page in (1..paginator.total_pages) %}
+      {% if page == paginator.page %}
       <span class="px-2 text-muted">{{ page }}</span>
-      {%- elsif page == 1 %}
+      {% elsif page == 1 %}
       <span class="px-2">
         <a href="/">{{ page }}</a>
       </span>
-      {%- else %}
+      {% else %}
       <span class="px-2">
         <a href="{{ site.paginate_path | prepend: site.baseurl | replace: '//', '/' | replace: ':num', page }}">{{ page }}</a>
       </span>
-      {% endif -%}
-    {% endfor -%}
+      {% endif %}
+    {% endfor %}
 
       <span class="px-3">
-      {%- if paginator.next_page %}
+      {% if paginator.next_page %}
         <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">Next <span class="fa fa-chevron-right pl-1"></span></a>
-      {%- else %}
+      {% else %}
         <span class="text-muted">Next <span class="fa fa-chevron-right"></span></span>
-      {%- endif %}
+      {% endif %}
       </span>
     </div>
   </div>
 </div>
-{%- endif %}
+{% endif %}

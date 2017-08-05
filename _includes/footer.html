@@ -24,15 +24,15 @@
         <p>
           <span class="fa fa-copyright"></span>
           <span id="copyright-year">
-            {%- assign firstPost = site.posts | last -%}
-            {%- assign lastPost = site.posts | first -%}
-            {%- assign firstPostYear = firstPost.date | date: "%Y" -%}
-            {%- assign lastPostYear = lastPost.date | date: "%Y" -%}
-            {%- if firstPostYear == lastPostYear -%}
+            {% assign firstPost = site.posts | last %}
+            {% assign lastPost = site.posts | first %}
+            {% assign firstPostYear = firstPost.date | date: "%Y" %}
+            {% assign lastPostYear = lastPost.date | date: "%Y" %}
+            {% if firstPostYear == lastPostYear %}
               {{ firstPostYear }}
-            {%- else -%}
+            {% else %}
               {{ firstPostYear }} &ndash; {{ lastPostYear }}
-            {%- endif -%}
+            {% endif %}
           </span>
           <span>{{ site.publisher }}</span>
         </p>
