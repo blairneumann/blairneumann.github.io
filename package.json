@@ -20,6 +20,7 @@
     "build-tag": "copyfiles -f _site/tag/* -e _site/tag/index.html tag/",
     "build": "bundle exec jekyll build",
     "postbuild": "npm run build-tag",
+    "predeploy": "npm run build",
     "deploy": "git push origin master"
   },
   "repository": {
